@@ -1,0 +1,12 @@
+{
+  "kind": "singleType",
+  "collectionName": "menu_items",
+  "info": {
+    "name": "menuItem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {}
+}
