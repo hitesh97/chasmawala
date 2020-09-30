@@ -1,0 +1,12 @@
+.col--4 {
+    --ifm-col-width: calc(4 / 12 * 100%);
+    flex: 0 0 var(--ifm-col-width);
+    max-width: var(--ifm-col-width);
+    flex: 1 0 calc(20%);
+}
+
+.col[class*="col--"] {
+    flex: 1 0 calc(20%);
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

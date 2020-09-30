@@ -18,7 +18,9 @@
     "@types/webfontloader": "^1.6.32",
     "axios": "^0.20.0",
     "express": "^4.17.1",
+    "pure-react-carousel": "^1.27.4",
     "react": "^16.13.1",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "webfontloader": "^1.6.28"

@@ -1,0 +1,9 @@
+.carousel-dot {
+    margin-right: 4px;
+    opacity: 50%;
+}
+
+.dot-active {
+    opacity: 100%;
+    font-size: var(--ifm-footer-nav-item-font-size);
+}
