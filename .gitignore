@@ -1,1 +1,2 @@
 strapi-razzle/cache/**/*
+node_modules/**/*

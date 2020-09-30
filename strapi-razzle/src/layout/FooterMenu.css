@@ -1,0 +1,29 @@
+.footer-nav-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-nav-items-left {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.footer-nav-items-right {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+.footer-social-icons {
+  margin-right: 6px;
+  opacity: 50%;
+}
