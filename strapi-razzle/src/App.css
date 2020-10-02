@@ -142,11 +142,6 @@ img {
   padding: var(--ifm-footer-padding-vertical) var(--ifm-footer-padding-horizontal);
 }
 
-.text--center {
-  text-align: center;
-  font-size: var(--ifm-footer-nav-item-tc-font-size);
-}
-
 .footer--dark {
   background-color: var(--ifm-footer-background-color);
   color: var(--ifm-footer-color);

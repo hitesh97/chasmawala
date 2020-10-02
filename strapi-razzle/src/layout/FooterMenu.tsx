@@ -138,10 +138,10 @@ const FooterMenu: FunctionComponent = ({ children }) => (
       </div>
     </div>
     <div className="footer-nav-container">
-      <div className="footer-nav-items-left text--center">
+      <div className="footer-nav-items-left">
         Terms & Conditions | Privacy Policy | Site Terms
       </div>
-      <div className="footer-nav-items-right text--center">
+      <div className="footer-nav-items-right">
         Copyright © 2020 chasmawala.com and its affiliates 2004-2020. All rights
         reserved.
       </div>

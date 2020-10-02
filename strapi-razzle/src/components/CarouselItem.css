@@ -1,9 +1,7 @@
-.carousel-dot {
-    margin-right: 4px;
-    opacity: 50%;
+.slideItem {
+    padding: 10px;
 }
 
-.dot-active {
-    opacity: 100%;
-    font-size: var(--ifm-footer-nav-item-font-size);
+.slideItem-image {
+    text-align: center;
 }

@@ -14,7 +14,7 @@ const FourColContent = ({
 }) => {
   return (
     <div className="col col--4">
-      <div className="text--center">
+      <div>
         <img className="featureImage_src-pages-" src={imgSrc} alt={imgAlt} />
       </div>
       <h3>{title}</h3>
