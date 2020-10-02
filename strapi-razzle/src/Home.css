@@ -1,3 +1,4 @@
 .container-half-width {
     display: flex;
+    flex-direction: row;
 }

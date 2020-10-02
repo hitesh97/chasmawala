@@ -60,7 +60,11 @@ const ResponsiveImageCarousel = () => {
       descPara={tile.description}
     />
   ));
-  return <Carousel className="imageCarousel">{items}</Carousel>;
+  return (
+    <Carousel className="imageCarousel" autoPlay={true} infiniteLoop={true}>
+      {items}
+    </Carousel>
+  );
 };
 
 export default ResponsiveImageCarousel;
