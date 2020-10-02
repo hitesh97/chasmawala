@@ -1,13 +1,10 @@
 import React from "react";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-import * as regIcons from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import "pure-react-carousel/dist/react-carousel.es.css";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import "./CarouselItem.css";
+import "./ResponsiveCarousel.css";
 
 const heroTileData = [
   {
@@ -24,13 +21,14 @@ const heroTileData = [
     description:
       "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the <code>docs</code> directory.",
   },
-  /*{
+  {
     id: "3",
     title: "Powered by React",
     imgSrc: "static/img/undraw_docusaurus_mountain.svg",
     description:
       "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.",
-  }
+  },
+  /*
   {
     id: "4",
     title: "Easy to Use",
@@ -99,7 +97,7 @@ const ResponsiveCarousel = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -110,6 +108,7 @@ const ResponsiveCarousel = () => {
       items: 1,
     },
   };
+  /*
   const items = heroTileData.map((tile, index) => (
     <SlideItem
       key={`slide${index}`}
@@ -119,9 +118,51 @@ const ResponsiveCarousel = () => {
       descPara={tile.description}
     />
   ));
+
+  const CustomDot = (props: any) => {
+    console.log("--------- CustomDot ----------");
+    console.log(props);
+    console.log("--------- CustomDot ----------");
+    
+    // const carouselItems = [CarouselItem1, CaourselItem2, CarouselItem3];
+    // onMove means if dragging or swiping in progress.
+    // active is provided by this lib for checking if the item is active or not.
+    return (
+      <button
+        onClick={props.onClick}
+        className={
+          props.active
+            ? "react-multi-carousel-dot react-multi-carousel-dot--active"
+            : "react-multi-carousel-dot react-multi-carousel-dot--inactive"
+        }
+      >
+        {heroTileData
+          .filter((item, itemIndex) => itemIndex === props.index)
+          .map((item, itemIndex) => {
+            return (
+              <img
+                key={`customDot${itemIndex}`}
+                src={item.imgSrc}
+                height="60px"
+                width="60px"
+              />
+            );
+          })}
+      </button>
+    );
+  }; */
+
   return (
-    <Carousel responsive={responsive} showDots={false} arrows={false}>
-      {items}
+    <Carousel responsive={responsive} showDots={true} arrows={false}>
+      {heroTileData.map((tile, index) => (
+        <SlideItem
+          key={`slide${index}`}
+          title={tile.title}
+          imgSrc={tile.imgSrc}
+          imgAlt={tile.title}
+          descPara={tile.description}
+        />
+      ))}
     </Carousel>
   );
 };

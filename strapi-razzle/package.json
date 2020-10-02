@@ -22,7 +22,9 @@
     "react": "^16.13.1",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.1",
+    "react-image-gallery": "^1.0.8",
     "react-multi-carousel": "^2.5.5",
+    "react-responsive-carousel": "^3.2.10",
     "react-router-dom": "^5.1.2",
     "webfontloader": "^1.6.28"
   },

@@ -1,0 +1,19 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.slideItem-img {
+  padding: 20px;
+  color: white;
+}
+
+.slideItem-image-img {
+  text-align: center;
+}
+
+.imageCarousel {
+  margin: 20px;
+  width: 600px;
+}
+
+.imageCarousel .selected {
+  /* background-color: green;*/
+}

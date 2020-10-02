@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import ResponsiveCarousel from "./components/CarouselItems";
+import ResponsiveCarousel from "./components/ResponsiveCarousel";
 import FourColContent from "./components/FourColContent";
 // import axios from "axios";
 
 import "./Home.css";
+import ResponsiveImageCarousel, {
+  ResponsiveImageGallery,
+} from "./components/ResponsiveImageCarousel";
 
 /* interface IRestaurant {
   name: string;
@@ -146,6 +149,11 @@ class Home extends React.Component<{}, {}> {
           ))}
         </div>
         <ResponsiveCarousel />
+        <div className="container-half-width">
+          <ResponsiveImageCarousel />
+          <ResponsiveImageCarousel />
+        </div>
+        {/* <ResponsiveImageGallery /> */}
       </>
     );
   }
