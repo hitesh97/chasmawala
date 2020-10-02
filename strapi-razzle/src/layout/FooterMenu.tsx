@@ -119,16 +119,19 @@ const FooterMenu: FunctionComponent = ({ children }) => (
               icon={Brands.faFacebookSquare}
               size="2x"
               className="footer-social-icons"
+              height="20px"
             />
             <FontAwesomeIcon
               icon={Brands.faTwitterSquare}
               size="2x"
               className="footer-social-icons"
+              height="20px"
             />
             <FontAwesomeIcon
               icon={Brands.faInstagramSquare}
               size="2x"
               className="footer-social-icons"
+              height="20px"
             />
           </div>
         </div>

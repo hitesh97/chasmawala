@@ -6,3 +6,17 @@
 .icon-search {
     margin-right: 0px;
 }
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-container-scrolled {
+    background-color: #F7F7F7 !important;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
