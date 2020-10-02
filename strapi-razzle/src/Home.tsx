@@ -4,9 +4,7 @@ import FourColContent from "./components/FourColContent";
 // import axios from "axios";
 
 import "./Home.css";
-import ResponsiveImageCarousel, {
-  ResponsiveImageGallery,
-} from "./components/ResponsiveImageCarousel";
+import ResponsiveImageCarousel from "./components/ResponsiveImageCarousel";
 
 /* interface IRestaurant {
   name: string;

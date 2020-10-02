@@ -61,7 +61,12 @@ const ResponsiveImageCarousel = () => {
     />
   ));
   return (
-    <Carousel className="imageCarousel" autoPlay={true} infiniteLoop={true}>
+    <Carousel
+      className="imageCarousel"
+      autoPlay={true}
+      infiniteLoop={true}
+      showThumbs={false}
+    >
       {items}
     </Carousel>
   );
