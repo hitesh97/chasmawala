@@ -3,6 +3,10 @@ import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import * as regIcons from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 import "./CarouselItem.css";
 
 const heroTileData = [
@@ -26,7 +30,7 @@ const heroTileData = [
     imgSrc: "static/img/undraw_docusaurus_mountain.svg",
     description:
       "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.",
-  },
+  } /*,
   {
     id: "4",
     title: "Easy to Use",
@@ -61,7 +65,7 @@ const heroTileData = [
     imgSrc: "static/img/undraw_docusaurus_tree.svg",
     description:
       "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the <code>docs</code> directory.",
-  },
+  },*/,
 ];
 
 const SlideItem = ({
@@ -113,7 +117,7 @@ const CustomDots = ({
   );
 };
 
-const CarouselItems = () => {
+const CarouselItems_01 = () => {
   const items = heroTileData.map((tile, index) => (
     <Slide index={index}>
       <SlideItem
@@ -136,11 +140,47 @@ const CarouselItems = () => {
       <DotGroup
         disableActiveDots={true}
         renderDots={(props) => {
-          console.log("------------ render dots ------------", props);
           return <CustomDots items={items} currentSlide={props.currentSlide} />;
         }}
       ></DotGroup>
     </CarouselProvider>
   );
 };
-export default CarouselItems;
+
+const ResponsiveCarousel = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+  const items = heroTileData.map((tile, index) => (
+    <SlideItem
+      key={`slide${index}`}
+      title={tile.title}
+      imgSrc={tile.imgSrc}
+      imgAlt={tile.title}
+      descPara={tile.description}
+    />
+  ));
+  return (
+    <Carousel responsive={responsive} showDots={false} arrows={false}>
+      {items}
+    </Carousel>
+  );
+};
+
+export default ResponsiveCarousel;

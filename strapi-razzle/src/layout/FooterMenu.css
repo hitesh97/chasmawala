@@ -23,7 +23,9 @@
   flex: 1 1 auto;
   justify-content: flex-end;
 }
+
 .footer-social-icons {
   margin-right: 6px;
   opacity: 50%;
+  height: "28px";
 }

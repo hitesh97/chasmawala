@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CarouselItems from "./components/CarouselItems";
+import ResponsiveCarousel from "./components/CarouselItems";
 import FourColContent from "./components/FourColContent";
 // import axios from "axios";
 
@@ -145,7 +145,7 @@ class Home extends React.Component<{}, {}> {
             />
           ))}
         </div>
-        <CarouselItems />
+        <ResponsiveCarousel />
       </>
     );
   }
