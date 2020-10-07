@@ -10,6 +10,7 @@ import Zoom from "react-reveal/Zoom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ProductCard from "./components/ProductCard";
 
 /* interface IRestaurant {
   name: string;
@@ -107,6 +108,7 @@ const productData = [
   {
     id: "01",
     title: "Whitley",
+    price: "19.99",
     imgSrc: "static/img/products/glasses-01.jpg",
     description:
       "With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
@@ -114,6 +116,7 @@ const productData = [
   {
     id: "02",
     title: "Whitley-02",
+    price: "29.99",
     imgSrc: "static/img/products/glasses-02.jpg",
     description:
       "02 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
@@ -121,7 +124,16 @@ const productData = [
   {
     id: "03",
     title: "Whitley-03",
+    price: "49.99",
     imgSrc: "static/img/products/glasses-03.jpg",
+    description:
+      "03 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
+  },
+  {
+    id: "04",
+    title: "Whitley-04",
+    price: "19.99",
+    imgSrc: "static/img/products/glasses-04.jpg",
     description:
       "03 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
   },
@@ -151,6 +163,18 @@ class Home extends React.Component<{}, {}> {
               title={tile.title}
               imgSrc={tile.imgSrc}
               imgAlt={tile.title}
+              descPara={tile.description}
+            />
+          ))}
+        </div>
+        <div className="row">
+          {productData.map((tile) => (
+            <ProductCard
+              key={`product-${tile.id}`}
+              title={tile.title}
+              imgSrc={tile.imgSrc}
+              imgAlt={tile.title}
+              price={tile.price}
               descPara={tile.description}
             />
           ))}

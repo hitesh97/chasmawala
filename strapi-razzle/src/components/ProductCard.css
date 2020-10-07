@@ -1,0 +1,33 @@
+.product-card {
+    padding: 20px;
+    color: var(--ifm-footer-background-color);
+    border: 1px solid var(--ifm-footer-background-color);
+    margin: 6px;
+}
+
+.product-card-img {
+    height: 150px;
+    width: 300px;
+}
+
+.product-title {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--ifm-footer-background-color);
+    line-height: 2rem;
+}
+
+.priceContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-right {
+    display: flex;
+}
+
+.price-left {
+    display: flex;
+    justify-content: flex-end;
+}

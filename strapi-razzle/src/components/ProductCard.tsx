@@ -1,22 +1,29 @@
 import React from "react";
+import "./ProductCard.css";
 
 const ProductCard = ({
   title,
+  price,
   imgSrc,
   imgAlt,
   descPara,
 }: {
   title: string;
+  price: string;
   imgSrc: string;
   imgAlt: string;
   descPara: string;
 }) => {
   return (
-    <div className="slideItem-img">
+    <div className="col col--4 product-card">
+      <div className="product-title">{title}</div>
       <div className="slideItem-image-img">
-        <img className="featureImage_src-pages-" src={imgSrc} alt={imgAlt} />
+        <img className="product-card-img" src={imgSrc} alt={imgAlt} />
       </div>
-      <h3>{title}</h3>
+      <div className="priceContainer">
+        <div className="price-left">{title}</div>
+        <div className="price-right">{price}</div>
+      </div>
       <p>{descPara}</p>
     </div>
   );
