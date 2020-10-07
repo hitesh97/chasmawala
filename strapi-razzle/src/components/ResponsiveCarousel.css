@@ -1,9 +1,14 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+.responseCarousel {}
+
 .slideItem {
     padding: 10px;
+    text-align: center;
 }
 
 .slideItem-image {
     text-align: center;
 }
+
+.responsiveSlide {}

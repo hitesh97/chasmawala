@@ -153,7 +153,13 @@ const ResponsiveCarousel = () => {
   }; */
 
   return (
-    <Carousel responsive={responsive} showDots={true} arrows={false}>
+    <Carousel
+      responsive={responsive}
+      showDots={true}
+      arrows={false}
+      className="responseCarousel"
+      itemClass="responsiveSlide"
+    >
       {heroTileData.map((tile, index) => (
         <SlideItem
           key={`slide${index}`}

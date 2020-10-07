@@ -17,3 +17,7 @@
 .imageCarousel .selected {
   /* background-color: green;*/
 }
+
+.carousel .slide {
+  background-color: var(--ifm-footer-background-color);
+}

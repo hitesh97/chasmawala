@@ -1,10 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ResponsiveCarousel from "./components/ResponsiveCarousel";
 import FourColContent from "./components/FourColContent";
 // import axios from "axios";
 
 import "./Home.css";
 import ResponsiveImageCarousel from "./components/ResponsiveImageCarousel";
+
+import Zoom from "react-reveal/Zoom";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 /* interface IRestaurant {
   name: string;
@@ -98,6 +103,29 @@ const section2Data = [
   },
 ];
 
+const productData = [
+  {
+    id: "01",
+    title: "Whitley",
+    imgSrc: "static/img/products/glasses-01.jpg",
+    description:
+      "With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
+  },
+  {
+    id: "02",
+    title: "Whitley-02",
+    imgSrc: "static/img/products/glasses-02.jpg",
+    description:
+      "02 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
+  },
+  {
+    id: "03",
+    title: "Whitley-03",
+    imgSrc: "static/img/products/glasses-03.jpg",
+    description:
+      "03 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
+  },
+];
 class Home extends React.Component<{}, {}> {
   state = {};
 
@@ -110,6 +138,9 @@ class Home extends React.Component<{}, {}> {
     }
   }; */
 
+  componentDidMount() {
+    AOS.init({ duration: 1500, delay: 1000 });
+  }
   public render() {
     return (
       <>
@@ -135,23 +166,24 @@ class Home extends React.Component<{}, {}> {
             />
           ))}
         </div>
-        <div className="row">
-          {section2Data.map((tile) => (
-            <FourColContent
-              key={`sec2-${tile.id}`}
-              title={tile.title}
-              imgSrc={tile.imgSrc}
-              imgAlt={tile.title}
-              descPara={tile.description}
-            />
-          ))}
-        </div>
+        <Zoom>
+          <div className="row heroCenter">
+            {section2Data.map((tile) => (
+              <FourColContent
+                key={`sec2-${tile.id}`}
+                title={tile.title}
+                imgSrc={tile.imgSrc}
+                imgAlt={tile.title}
+                descPara={tile.description}
+              />
+            ))}
+          </div>
+        </Zoom>
         <ResponsiveCarousel />
         <div className="container-half-width">
           <ResponsiveImageCarousel />
           <ResponsiveImageCarousel />
         </div>
-        {/* <ResponsiveImageGallery /> */}
       </>
     );
   }
