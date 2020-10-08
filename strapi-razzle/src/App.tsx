@@ -5,6 +5,9 @@ import DefaultLayout from "./layout/DefaultLayout";
 import Home from "./Home";
 import About from "./About";
 
+import { ThemeProvider, CSSReset } from "@chakra-ui/core";
+import { theme } from "@chakra-ui/core";
+
 import "./App.css";
 
 interface PrivateRouteProps extends RouteProps {
@@ -29,15 +32,18 @@ const RouteWrapper = (props: PrivateRouteProps) => {
 
 const App = () => {
   return (
-    <Switch>
-      <RouteWrapper
-        exact={true}
-        path="/"
-        component={Home}
-        layout={DefaultLayout}
-      />
-      <RouteWrapper path="/about" component={About} layout={DefaultLayout} />
-    </Switch>
+    <ThemeProvider theme={theme}>
+      <CSSReset />
+      <Switch>
+        <RouteWrapper
+          exact={true}
+          path="/"
+          component={Home}
+          layout={DefaultLayout}
+        />
+        <RouteWrapper path="/about" component={About} layout={DefaultLayout} />
+      </Switch>
+    </ThemeProvider>
   );
 };
 

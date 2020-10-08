@@ -109,6 +109,7 @@ const productData = [
     id: "01",
     title: "Whitley",
     price: "19.99",
+    rating: 4,
     imgSrc: "static/img/products/glasses-01.jpg",
     description:
       "With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
@@ -117,6 +118,7 @@ const productData = [
     id: "02",
     title: "Whitley-02",
     price: "29.99",
+    rating: 4.5,
     imgSrc: "static/img/products/glasses-02.jpg",
     description:
       "02 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
@@ -125,6 +127,7 @@ const productData = [
     id: "03",
     title: "Whitley-03",
     price: "49.99",
+    rating: 5,
     imgSrc: "static/img/products/glasses-03.jpg",
     description:
       "03 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
@@ -133,9 +136,10 @@ const productData = [
     id: "04",
     title: "Whitley-04",
     price: "19.99",
+    rating: 2.5,
     imgSrc: "static/img/products/glasses-04.jpg",
     description:
-      "03 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
+      "04 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
   },
 ];
 class Home extends React.Component<{}, {}> {
@@ -171,10 +175,12 @@ class Home extends React.Component<{}, {}> {
           {productData.map((tile) => (
             <ProductCard
               key={`product-${tile.id}`}
+              id={tile.id}
               title={tile.title}
               imgSrc={tile.imgSrc}
               imgAlt={tile.title}
               price={tile.price}
+              rating={tile.rating}
               descPara={tile.description}
             />
           ))}
