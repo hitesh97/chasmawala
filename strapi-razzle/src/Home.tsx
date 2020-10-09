@@ -119,7 +119,7 @@ const productData = [
     title: "Whitley-02",
     price: "29.99",
     rating: 4.5,
-    imgSrc: "/static/img/products/glasses-02.jpg",
+    imgSrc: "/static/img/products/glasses-06.jpg",
     description:
       "02 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
   },
@@ -128,16 +128,16 @@ const productData = [
     title: "Whitley-03",
     price: "49.99",
     rating: 5,
-    imgSrc: "/static/img/products/glasses-03.jpg",
+    imgSrc: "/static/img/products/glasses-05.jpg",
     description:
       "03 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
   },
   {
     id: "04",
-    title: "Whitley-04",
+    title: "Whitley-07",
     price: "19.99",
     rating: 2.5,
-    imgSrc: "/static/img/products/glasses-04.jpg",
+    imgSrc: "/static/img/products/glasses-07.jpg",
     description:
       "04 - With a choice of colours you can be sure to find Whitley in a style that you love. Its minimalist design will compliment your style with ease. Lightweight and easy to wear with a comforting finish.",
   },

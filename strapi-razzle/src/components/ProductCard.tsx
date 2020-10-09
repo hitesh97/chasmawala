@@ -1,12 +1,11 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-import * as Icons from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { IconButton, Button, Box, Image, Icon } from "@chakra-ui/core";
 import { FaHeart } from "react-icons/fa";
 
 import "./ProductCard.css";
+import { CurrencySymbol } from "../common/siteSettings";
 
 const ProductCard = ({
   id,
@@ -33,7 +32,7 @@ const ProductCard = ({
           paddingLeft="10px"
           paddingRight="10px"
           paddingBottom="10px"
-          marginTop="20px"
+          marginTop="40px"
           marginBottom="20px"
         >
           <div className="product-title">{title}</div>
@@ -47,7 +46,10 @@ const ProductCard = ({
                 edit={false}
               />
             </div>
-            <div className="price-right">£{price}</div>
+            <div className="price-right">
+              {CurrencySymbol}
+              {price}
+            </div>
           </div>
           <div className="product-actions-container">
             <div className="product-actions-left">

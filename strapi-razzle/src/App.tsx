@@ -10,6 +10,7 @@ import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 import { theme } from "@chakra-ui/core";
 
 import "./App.css";
+import ThreeColPageLayout from "./layout/ThreeColPageLayout";
 
 interface PrivateRouteProps extends RouteProps {
   // tslint:disable-next-line:no-any
@@ -45,7 +46,7 @@ const App = () => {
         <RouteWrapper
           path="/product/:id?"
           component={ProductDetails}
-          layout={DefaultLayout}
+          layout={ThreeColPageLayout}
         />
         <RouteWrapper path="/about" component={About} layout={DefaultLayout} />
       </Switch>
