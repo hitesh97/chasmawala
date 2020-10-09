@@ -80,7 +80,7 @@ const SlideItem = ({
   return (
     <div className="slideItem">
       <div className="slideItem-image">
-        <img className="featureImage_src-pages-" src={imgSrc} alt={imgAlt} />
+        <img className="featureImage" src={imgSrc} alt={imgAlt} />
       </div>
       <h3>{title}</h3>
       <p>{descPara}</p>

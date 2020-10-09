@@ -27,11 +27,8 @@ const ProductCard = ({
 }) => {
   return (
     <div className="col col--4 product-card">
-      <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
+      <Box borderWidth="1px" rounded="lg" overflow="hidden">
         <Image className="product-card-img" src={imgSrc} alt={imgAlt} />
-        {/* <div className="slideItem-image-img">
-          <img className="product-card-img" src={imgSrc} alt={imgAlt} />
-        </div> */}
         <Box
           paddingLeft="10px"
           paddingRight="10px"
@@ -48,27 +45,6 @@ const ProductCard = ({
                 a11y={true}
                 size={25}
                 edit={false}
-                emptyIcon={
-                  <FontAwesomeIcon
-                    icon={Icons.faStar}
-                    size="xs"
-                    height="10px"
-                  />
-                }
-                halfIcon={
-                  <FontAwesomeIcon
-                    icon={Icons.faStarHalfAlt}
-                    size="xs"
-                    height="10px"
-                  />
-                }
-                filledIcon={
-                  <FontAwesomeIcon
-                    icon={Icons.faStar}
-                    size="xs"
-                    height="10px"
-                  />
-                }
               />
             </div>
             <div className="price-right">£{price}</div>

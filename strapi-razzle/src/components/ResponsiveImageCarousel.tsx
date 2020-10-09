@@ -43,7 +43,7 @@ const ResponsiveImageCarousel = () => {
     return (
       <div className="slideItem-img">
         <div className="slideItem-image-img">
-          <img className="featureImage_src-pages-" src={imgSrc} alt={imgAlt} />
+          <img className="featureImage" src={imgSrc} alt={imgAlt} />
         </div>
         <h3>{title}</h3>
         <p>{descPara}</p>

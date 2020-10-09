@@ -1,14 +1,9 @@
 .product-card {
-  /* padding: 20px; */
-  padding: 0px !important;
-  color: var(--ifm-footer-background-color);
-  /*border: 1px solid var(--ifm-footer-background-color);*/
-  margin: 6px;
 }
 
 .product-card-img {
   height: 150px;
-  width: 300px;
+  width: 100%;
 }
 
 .product-title {

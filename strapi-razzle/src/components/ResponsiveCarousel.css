@@ -12,3 +12,8 @@
 }
 
 .responsiveSlide {}
+
+.slideItem-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
