@@ -10,21 +10,21 @@ const ResponsiveImageCarousel = () => {
     {
       id: "1",
       title: "Easy to Use",
-      imgSrc: "static/img/undraw_docusaurus_tree.svg",
+      imgSrc: "/static/img/undraw_docusaurus_tree.svg",
       description:
         "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.",
     },
     {
       id: "2",
       title: "Focus on What Matters",
-      imgSrc: "static/img/undraw_docusaurus_tree.svg",
+      imgSrc: "/static/img/undraw_docusaurus_tree.svg",
       description:
         "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the <code>docs</code> directory.",
     },
     {
       id: "3",
       title: "Powered by React",
-      imgSrc: "static/img/undraw_docusaurus_mountain.svg",
+      imgSrc: "/static/img/undraw_docusaurus_mountain.svg",
       description:
         "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.",
     },

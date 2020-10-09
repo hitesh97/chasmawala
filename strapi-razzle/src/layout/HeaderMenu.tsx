@@ -30,7 +30,7 @@ const HeaderMenu: FunctionComponent = () => {
           <a className="navbar__brand" href="/">
             <img
               className="navbar__logo"
-              src="static/img/sun_glasses_logo.svg"
+              src="/static/img/sun_glasses_logo.svg"
               alt="My Site Logo"
               height="32px"
               width="32px"

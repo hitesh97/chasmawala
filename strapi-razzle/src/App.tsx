@@ -4,6 +4,7 @@ import { Route, Switch, RouteProps, Link } from "react-router-dom";
 import DefaultLayout from "./layout/DefaultLayout";
 import Home from "./Home";
 import About from "./About";
+import ProductDetails from "./pages/ProductDetails";
 
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 import { theme } from "@chakra-ui/core";
@@ -39,6 +40,11 @@ const App = () => {
           exact={true}
           path="/"
           component={Home}
+          layout={DefaultLayout}
+        />
+        <RouteWrapper
+          path="/product/:id?"
+          component={ProductDetails}
           layout={DefaultLayout}
         />
         <RouteWrapper path="/about" component={About} layout={DefaultLayout} />
