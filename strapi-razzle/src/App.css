@@ -1,4 +1,6 @@
 :root {
+  --ifm-font-color: #303846;
+  --ifm-dark-gray-bg: #797979dd;
   --ifm-navbar-item-padding-vertical: 0.25rem;
   --ifm-navbar-item-padding-horizontal: 1rem;
   --ifm-navbar-link-color: #1c1e21;

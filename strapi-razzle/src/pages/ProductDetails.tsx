@@ -7,6 +7,8 @@ import GuaranteeInfo from "../components/GuaranteeInfo";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
+import "./ProductDetails.css";
+
 // import ItemsCarousel from 'react-items-carousel';
 
 const productInfo = {
@@ -30,7 +32,13 @@ const productInfo = {
 
 const ProductDetails = () => {
   const items = productInfo.images.map((tile, index) => (
-    <Image key={`productImg${index}`} src={tile} height="100" width="Auto" />
+    <Image
+      key={`productImg${index}`}
+      src={tile}
+      height="100%"
+      width="Auto"
+      rounded="lg"
+    />
   ));
   return (
     <Box display="flex" justifyContent="space-between" minHeight="500px">
@@ -47,7 +55,7 @@ const ProductDetails = () => {
           {productInfo.productCode}
         </Box>
 
-        <Image src={productInfo.imgSrc} rounded="lg" />
+        {/* <Image src={productInfo.imgSrc} rounded="lg" /> */}
         <Box>
           <Carousel
             showArrows={false}

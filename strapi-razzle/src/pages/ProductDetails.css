@@ -1,0 +1,12 @@
+.carousel .slide img {
+    height: 100%;
+}
+.carousel .carousel-status {
+    color: var(--ifm-font-color);
+}
+.carousel .thumbs {
+    text-align: center;
+}
+.control-dots{
+    background-color: var(--ifm-dark-gray-bg);
+}
