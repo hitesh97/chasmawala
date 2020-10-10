@@ -7,6 +7,15 @@
 .carousel .thumbs {
     text-align: center;
 }
+.carousel .control-dots .dot {
+    margin: 0px;
+}
 .control-dots{
     background-color: var(--ifm-dark-gray-bg);
+    border-radius: 4px;
+    margin: 0px !important;
+}
+.carousel .control-dots .dot{
+    margin-bottom: 2px;
+    margin-right: 10px;
 }

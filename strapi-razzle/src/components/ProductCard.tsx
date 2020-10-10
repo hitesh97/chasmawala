@@ -1,11 +1,12 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 
-import { IconButton, Button, Box, Image, Icon } from "@chakra-ui/core";
+import { IconButton, Button, Box, Image } from "@chakra-ui/core";
 import { FaHeart } from "react-icons/fa";
 
 import "./ProductCard.css";
 import { CurrencySymbol } from "../common/siteSettings";
+import { useHistory } from "react-router-dom";
 
 const ProductCard = ({
   id,
@@ -24,6 +25,7 @@ const ProductCard = ({
   imgAlt: string;
   descPara: string;
 }) => {
+  const history = useHistory();
   return (
     <div className="col col--4 product-card">
       <Box borderWidth="1px" rounded="lg" overflow="hidden">
@@ -58,6 +60,7 @@ const ProductCard = ({
                 variantColor="teal"
                 variant="solid"
                 size="xs"
+                onClick={() => history.push(`/product/${id}`)}
               >
                 Detail
               </Button>

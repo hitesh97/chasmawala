@@ -19,6 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@types/aos": "^3.0.3",
+    "@types/react-router": "^5.1.8",
     "@types/webfontloader": "^1.6.32",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.20.0",
