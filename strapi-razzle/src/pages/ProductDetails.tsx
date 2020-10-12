@@ -33,7 +33,7 @@ const productInfo = {
 const ProductDetails = () => {
   const items = productInfo.images.map((tile, index) => (
     <Image
-      key={`productImg${index}`}
+      key={`productImg-${index}`}
       src={tile}
       height="100%"
       width="Auto"
@@ -60,7 +60,11 @@ const ProductDetails = () => {
           <Carousel
             showArrows={false}
             renderThumbs={(children) =>
-              children.map((child) => <Box height="60px">{child}</Box>)
+              children.map((child, index) => (
+                <Box key={`thumb-${index}`} height="60px">
+                  {child}
+                </Box>
+              ))
             }
           >
             {items}

@@ -8,7 +8,7 @@ const DefaultLayout: FunctionComponent = ({ children }) => (
     <div className="box content">
       <header className="hero hero--primary heroBanner_2Ftp">
         <div className="hero-container">
-          <h1 className="hero__title">Chasmawala</h1>
+          <h1 className="hero__title">Chasmaawala</h1>
           <p className="hero__subtitle">Find your perfect pair!</p>
         </div>
       </header>

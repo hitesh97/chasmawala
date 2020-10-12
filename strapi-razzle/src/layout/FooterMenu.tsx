@@ -88,7 +88,7 @@ const FooterMenu: FunctionComponent = ({ children }) => (
           <ul className="footer__items">
             <li className="footer__item">
               <a className="footer__link-item" href="#">
-                About chasmawala
+                About chasmaawala
               </a>
             </li>
             <li className="footer__item">
@@ -142,8 +142,8 @@ const FooterMenu: FunctionComponent = ({ children }) => (
         Terms & Conditions | Privacy Policy | Site Terms
       </div>
       <div className="footer-nav-items-right">
-        Copyright © 2020 chasmawala.com and its affiliates 2004-2020. All rights
-        reserved.
+        Copyright © 2020 chasmaawala.com and its affiliates 2004-2020. All
+        rights reserved.
       </div>
     </div>
   </footer>

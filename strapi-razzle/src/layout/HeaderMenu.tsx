@@ -35,7 +35,7 @@ const HeaderMenu: FunctionComponent = () => {
               height="32px"
               width="32px"
             />
-            <strong className="navbar__title">chasmawala.com</strong>
+            <strong className="navbar__title">chasmaawala.com</strong>
           </a>
           <a className="navbar__item navbar__link" href="#">
             Men

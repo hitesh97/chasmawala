@@ -5,3 +5,7 @@ declare module "react-awesome-slider/src/components/captioned/styles.scss";
 declare module "react-reveal";
 declare module "react-reveal/Zoom";
 declare module "react-rating-stars-component";
+
+interface Window {
+    __PRELOADED_STATE__: {};
+  }
